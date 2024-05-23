@@ -1,24 +1,113 @@
 .App {
-  background-color: rgb(89, 85, 85);
-  padding-top: 50px;
+  overflow: hidden;
+}
+@font-face {
+  font-family: 'Techie';
+  src: url('../public/fonts/robot-9000-font/Robot9000Italic-YzxE8.ttf');
+}
+.Logo {
+  color: greenyellow;
+  font-family: 'Techie';
+}
+.Background  {
+  background-image: url('../src/assets/back.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: left;
-  justify-content: top;
+  align-items: flex-start;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
+.hBox {
   align-items: center;
-  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  margin-right: 50px;
+  /* justify-content: ; */
   margin-top: 50px;
   margin-bottom: 50px;
+  /* color: greenyellow; */
+}
+.message-Bubble {
+  width: 55%;
+  height: auto;
+  display: inline-block;
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid fuchsia;
+  padding: 5px;
+  box-shadow: 0 4px 6px lightpink;
+  text-align: center;
+  margin-bottom: 30px;
+  
+}
+.message-Text {
+  
+  justify-content: center;
+  margin: 0;
+  color: hotpink;
+  text-align: center;
+  margin-right: 5px;
 }
 
+.bitmoji {
+  justify-self: end;
+  margin-left: auto;
+  margin-right: 5px;
+}
+.title_Block {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin-top: 10px;
+  margin-bottom: 50px;
+  max-width: 650px;
+}
+
+.title_Block h1 {
+  
+  font-family: 'Techie';
+  line-height: 1.5;
+  color: greenyellow;
+  font-size: xx-large; 
+}
+
+.island{
+  margin-top: 100px;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(20deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-20deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.wave {
+  animation: wave 1s infinite;
+  margin-right: 10px;
+}
+.bio {
+  flex-direction: column;
+  width: 46%;
+  margin-left: 50px;
+}
+.bio-text {
+  color: white;
+  line-height: 2;
+}
 /* Add any other styles you need */
