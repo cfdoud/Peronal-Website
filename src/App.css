@@ -5,6 +5,10 @@
   font-family: 'Techie';
   src: url('../public/fonts/robot-9000-font/Robot9000Italic-YzxE8.ttf');
 }
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/ExoSpace.606b1a1e5fed2c8afb24.ttf');
+}
 .Logo {
   color: greenyellow;
   font-family: 'Techie';
@@ -110,4 +114,59 @@
   color: white;
   line-height: 2;
 }
+.tool-title {
+  color: greenyellow;
+  font-size: x-large;
+  font-weight: bolder;
+  font-family: 'Techie';  
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  
+}
+.tool-card{
+  color: red;
+}
+.tool-row{
+  display: flex;
+  flex-direction: row;
+
+  
+
+}
+.card-body {
+  background-color: darkorchid;
+  border-radius: 10px;
+  border: 2px solid fuchsia;
+ 
+  box-shadow: 0 4px 6px lightpink;
+  text-align: center;
+ 
+}
+.card {
+  background-color: black;
+  border-width: 5px;
+  border-color: fuchsia;
+  border-radius: 10px;
+  width: 60%;
+}
+.card2 {
+  background-color: gren;
+  border-width: 5px;
+  border-color: teal;
+  border-radius: 10px;
+  margin-top: 20px;
+  max-width: 20%;
+  
+
+}
+.skill-text {
+  color: greenyellow;
+  font-size: xx-large;
+  font-family: 'Roboto';
+  /* margin-top: 10px; */
+  
+  margin: 0;
+}
+
 /* Add any other styles you need */
