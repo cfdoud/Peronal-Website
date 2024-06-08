@@ -9,6 +9,10 @@
   font-family: 'Roboto';
   src: url('./assets/ExoSpace.606b1a1e5fed2c8afb24.ttf');
 }
+@font-face {
+  font-family: 'Tagon';
+  src: url('./assets/Tagon.ttf');
+}
 .Logo {
   color: greenyellow;
   font-family: 'Techie';
@@ -131,8 +135,6 @@
   display: flex;
   flex-direction: row;
 
-  
-
 }
 .card-body {
   background-color: darkorchid;
@@ -165,11 +167,77 @@
 }
 .skill-text {
   color: greenyellow;
-  font-size: large;
   font-family: 'Roboto';
-  /* margin-top: 10px; */
-  
+  font-size: small;
   margin: 0;
 }
+.offcanvas {
+  background-color: black;
+  color: greenyellow;
+  font-family: 'Roboto';
+  font-size: small;
+  margin: 0;
+  height: 100%;
+  
+  
+}
+.custom-nav-item {
+  color: greenyellow;
+  font-family: 'Roboto';
+  font-size: small;
+  margin: 0;
+  height: 100%;
 
+}
+.custom-nav-link {
+  color: greenyellow;
+  font-family: 'Roboto';
+  font-size: small;
+  margin: 0;  height: 100%;
+  height: 100%;
+
+  
+}
+.markers{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 10px;
+}
+.marker{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid fuchsia;
+  background-color: black;
+  height: 100%;
+  width: 70px;
+  justify-content: center; /* Center text vertically */
+  align-items: center; /* Center text horizontally */
+}
+
+.marker-text{
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  transform-origin: center;
+  color: #94834a;
+  font-size: 20px;
+  font-family: Tagon;
+  line-height: 1;
+  font-weight: bold;
+  font-stretch: expanded;
+  text-decoration: none;
+  letter-spacing: 5px;
+}
+.bookshelf {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.navbar-toggler-icon {
+  background-color: greenyellow;
+}
+.hamburger {
+  background: none;
+  border: none;
+}
 /* Add any other styles you need */
