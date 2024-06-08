@@ -148,21 +148,24 @@
   border-width: 5px;
   border-color: fuchsia;
   border-radius: 10px;
-  width: 60%;
+  width: 80%;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .card2 {
-  background-color: gren;
+  background-color: black;
   border-width: 5px;
   border-color: teal;
   border-radius: 10px;
-  margin-top: 20px;
-  max-width: 20%;
+  
+  
+  max-width: 160px;
   
 
 }
 .skill-text {
   color: greenyellow;
-  font-size: xx-large;
+  font-size: large;
   font-family: 'Roboto';
   /* margin-top: 10px; */
   
