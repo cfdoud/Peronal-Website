@@ -5,7 +5,7 @@ import wave from './assets/wave.svg';
 import bitmoji from './assets/bitmoji.png';
 import './App.css';
 import { useEffect, useRef } from 'react';
-
+import ZSE from './assets/ZSE.png';
 
 function App() {
   const textRef = useRef(null);
@@ -49,11 +49,8 @@ function App() {
             </button>
             
           <div className="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-            <div className="offcanvas-header">
-              <h5 className="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-              <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div className="offcanvas-body">
+            
+            
               <div className='bookshelf'>
                 <div className='markers'>
                   <div className='marker'>
@@ -75,7 +72,7 @@ function App() {
                   <div className='marker'>
                     <a className="marker-text" aria-current="page" href="./assets/resume.pdf" target="_blank" rel="noopener noreferrer" download='./assets/resume.pdf'>Download Resume</a>
                   </div>
-                </div>
+                
               </div>
 
             
@@ -123,11 +120,19 @@ function App() {
           </button> */}
 
       </header>
-  </div> 
+  </div>
+
+
+  <div className='p-5 parent-container'>
+    <div className='title-container'>
+      <h3 className='tool-text'>Tool Box</h3>
+    </div>
+  </div>
+
 
   <div className='card mx-auto'>
     <div className="tool-title">
-      <h3 className='tool-text'>Tool Box</h3>
+      
         <div className = "tool-row justify-content-between">
           <div className='card card2 col-md-4 mb-5'>
             <p className='skill-text h5'>
@@ -247,18 +252,46 @@ function App() {
               git
             </p>
           </div>
-          
-
-          
-          
-          
         </div>
-      
-
-
-
     </div>
   </div>
+  
+  {/* Projects Section */}
+  <div className='p-5 parent-container'>
+    <div className='title-container'>
+      <h3 className='tool-text'>Recent Projects</h3>
+    </div>
+  </div>
+
+  <div className='project-container'>
+    <div className='project-card'>
+      <div className='project-image'>
+        <div className='project-text'>
+          <a href='https://github.com/cfdoud/Zombie-Shooter-Extreme' style={{textDecoration: 'none', color: 'green'}}>Zombie Shooter Extreme!</a>
+          <p>Zombie style shooter game created with Raylib library.</p>
+        </div>
+        <a href='https://github.com/cfdoud/Zombie-Shooter-Extreme'>
+          <img src={ZSE} className='project-image' alt=' goes here' />
+        </a>
+      </div>
+    </div>
+
+
+    <div className='project-card'>
+      <div className='project-image'>
+        <div className='project-text'>
+          <a href='' style={{textDecoration: 'none', color: 'green'}}>Finstagram</a>
+            <p>Instagram-type site where users can dynamically share and view their best moments.</p>
+        </div>
+        <a href='https://github.com/cfdoud/Finsta-gram'>
+          <img src={ZSE} className='project-image' alt=' goes here' />
+        </a>      
+      </div>
+    </div>
+  
+  </div>        
+  
+
 
   </div>
   );
