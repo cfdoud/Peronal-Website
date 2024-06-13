@@ -280,7 +280,7 @@ function App() {
     <div className='project-card'>
       <div className='project-image'>
         <div className='project-text'>
-          <a href='' style={{textDecoration: 'none', color: 'green'}}>Finstagram</a>
+          <a href='https://github.com/cfdoud/Finsta-gram' style={{textDecoration: 'none', color: 'green'}}>Finstagram</a>
             <p>Instagram-type site where users can dynamically share and view their best moments.</p>
         </div>
         <a href='https://github.com/cfdoud/Finsta-gram'>
