@@ -1,0 +1,299 @@
+.App {
+    overflow: hidden;
+  }
+  @font-face {
+    font-family: 'Techie';
+    src: url('../../../public/fonts/robot-9000-font/Robot9000Italic-YzxE8.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../../assets/ExoSpace.606b1a1e5fed2c8afb24.ttf');
+  }
+  @font-face {
+    font-family: 'Tagon';
+    src: url('../../assets/Tagon.ttf');
+  }
+  .Logo {
+    color: greenyellow;
+    font-family: 'Techie';
+  }
+  
+  .App-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: calc(10px + 2vmin);
+  }
+  
+  .hBox {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-right: 50px;
+    /* justify-content: ; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* color: greenyellow; */
+  }
+  .message-Bubble {
+    width: 55%;
+    height: auto;
+    display: inline-block;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid fuchsia;
+    padding: 5px;
+    box-shadow: 0 4px 6px lightpink;
+    text-align: center;
+    margin-bottom: 30px;
+    
+  }
+  .message-Text {
+    
+    justify-content: center;
+    margin: 0;
+    color: hotpink;
+    text-align: center;
+    margin-right: 5px;
+  }
+  
+  .bitmoji {
+    justify-self: end;
+    margin-left: auto;
+    margin-right: 5px;
+  }
+  .title_Block {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-top: 10px;
+    margin-bottom: 50px;
+    max-width: 650px;
+  }
+  
+  .title_Block h1 {
+    
+    font-family: 'Techie';
+    line-height: 1.5;
+    color: greenyellow;
+    font-size: xx-large; 
+  }
+  
+  .island{
+    margin-top: 100px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+  }
+  
+  @keyframes wave {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(20deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-20deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  .wave {
+    animation: wave 1s infinite;
+    margin-right: 10px;
+  }
+  .bio {
+    flex-direction: column;
+    width: 46%;
+    margin-left: 50px;
+  }
+  .bio-text {
+    color: white;
+    line-height: 2;
+  }
+  .parent-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .title-container {
+    border: #94834a 2px solid;
+    
+    border-radius: 10px;
+    display: inline-flex;
+    /* text-align: center; */
+    
+    padding: 5px;
+    /* text-wrap: wrap; */
+    margin: 10px auto;
+    /* width: fit-content; */
+    
+  }
+  .tool-text {
+    text-align: center;
+    color: hotpink;
+    font-family: 'Roboto';
+    padding: 2px;
+    line-height: 1;
+  }
+  
+  .tool-title {
+    color: greenyellow;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Techie';  
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    
+  }
+  .tool-card{
+    color: red;
+  }
+  .tool-row{
+    display: flex;
+    flex-direction: row;
+  
+  }
+  .card-body {
+    background-color: darkorchid;
+    border-radius: 10px;
+    border: 2px solid fuchsia;
+   
+    box-shadow: 0 4px 6px lightpink;
+    text-align: center;
+   
+  }
+  .card {
+    background-color: black;
+    border-width: 5px;
+    border-color: fuchsia;
+    border-radius: 10px;
+    width: 80%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .card2 {
+    background-color: black;
+    border-width: 5px;
+    border-color: teal;
+    border-radius: 10px;
+    
+    
+    max-width: 160px;
+    
+  
+  }
+  .skill-text {
+    color: greenyellow;
+    font-family: 'Roboto';
+    font-size: small;
+    margin: 0;
+  }
+  .offcanvas {
+    background-color: black;
+    color: greenyellow;
+    font-family: 'Roboto';
+    font-size: small;
+    margin: 0;
+    height: 100%;
+    
+    
+  }
+  .custom-nav-item {
+    color: greenyellow;
+    font-family: 'Roboto';
+    font-size: small;
+    margin: 0;
+    height: 100%;
+  
+  }
+  .custom-nav-link {
+    color: greenyellow;
+    font-family: 'Roboto';
+    font-size: small;
+    margin: 0;  height: 100%;
+    height: 100%;
+  
+    
+  }
+  .markers{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px;
+  }
+  .marker{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid fuchsia;
+    background-color: black;
+    height: 100%;
+    width: 70px;
+    justify-content: center; /* Center text vertically */
+    align-items: center; /* Center text horizontally */
+  }
+  
+  .marker-text{
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    transform-origin: center;
+    color: #94834a;
+    font-size: 20px;
+    font-family: Tagon;
+    line-height: 1;
+    font-weight: bold;
+    font-stretch: expanded;
+    text-decoration: none;
+    letter-spacing: 5px;
+  }
+  .bookshelf {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  .navbar-toggler-icon {
+    background-color: greenyellow;
+  }
+  .hamburger {
+    background: none;
+    border: none;
+  }
+  .project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .project-card {
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid fuchsia;
+    box-shadow: 0 4px 6px lightpink;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+  }
+  .project-card h3 {
+    color: greenyellow;
+    font-family: 'Techie';
+    font-size: large;
+    margin: 0;
+  }
+  .project-text {
+    color: hotpink;
+    font-family: 'Roboto';
+    font-size: large;
+    margin: 0;
+  }
+  .project-image {
+    border-radius: 10px;
+    max-height: auto;
+    max-width: 100%;
+  
+  }
+  /* Add any other styles you need */
+  
