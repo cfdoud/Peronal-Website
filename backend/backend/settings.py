@@ -121,7 +121,8 @@ USE_I18N = True
 USE_TZ = True
 
 ALLOWED_HOSTS = [
-    'https://backend-personal-k0ux.onrender.com'
+    'https://backend-personal-k0ux.onrender.com',
+    'backend-personal-k0ux.onrender.com'
 ]
 
 # Static files (CSS, JavaScript, Images)
