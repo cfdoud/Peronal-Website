@@ -6,7 +6,7 @@ function Project() {
 
     useEffect(() => {
         // Fetch data from Django backend
-        fetch('https://backend-personal-k0ux.onrender.com')
+        fetch('https://backend-personal-k0ux.onrender.com/projects/')
             .then(response => response.json())
             .then(data => setProjects(data))
             .catch(error => console.error('Error fetching data:', error));
