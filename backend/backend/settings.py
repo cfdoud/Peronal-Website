@@ -121,9 +121,10 @@ USE_I18N = True
 USE_TZ = True
 
 ALLOWED_HOSTS = [
-    'https://backend-personal-k0ux.onrender.com',
+    'backend-personal-k0ux.onrender.com',
     'localhost',
     '127.0.0.1',
+    'backend-personal-k0ux.onrender.com',
 
 ]
 
