@@ -121,8 +121,10 @@ USE_I18N = True
 USE_TZ = True
 
 ALLOWED_HOSTS = [
-    
-    'https://peronal-website.onrender.com',
+    'https://backend-personal-k0ux.onrender.com',
+    'localhost',
+    '127.0.0.1',
+
 ]
 
 # Static files (CSS, JavaScript, Images)
