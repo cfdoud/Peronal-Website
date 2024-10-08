@@ -22,9 +22,9 @@ function App() {
 
 
   <div className='p-5 parent-container'>
-    <div className='title-container'>
+    {/* <div className='title-container'>
       <h3 className='tool-text'>Tool Box</h3>
-    </div>
+    </div> */}
   </div>
 
   <Toolbox />

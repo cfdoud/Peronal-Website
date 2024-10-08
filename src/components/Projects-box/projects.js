@@ -6,7 +6,7 @@ function Project() {
 
     useEffect(() => {
         // Fetch data from Django backend
-        fetch('https://backend-personal-k0ux.onrender.com/projects/')
+        fetch('http://127.0.0.1:8000/projects/')
             .then(response => response.json())
             .then(data => setProjects(data))
             .catch(error => console.error('Error fetching data:', error));
@@ -17,7 +17,7 @@ function Project() {
             <div className='p-5 parent-container'>
                 <div className='title-container'>
                     <h3 className='tool-text'>Recent Projects</h3>
-                </div>
+                </div>      
             </div>
 
             <div className='project-container'>

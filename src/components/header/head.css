@@ -1,23 +1,4 @@
-.App {
-    overflow: hidden;
-  }
-  @font-face {
-    font-family: 'Techie';
-    src: url('../../../public/fonts/robot-9000-font/Robot9000Italic-YzxE8.ttf');
-  }
-  
-  @font-face {
-    font-family: 'Roboto';
-    src: url('../../assets/ExoSpace.606b1a1e5fed2c8afb24.ttf');
-  }
-  @font-face {
-    font-family: 'Tagon';
-    src: url('../../assets/Tagon.ttf');
-  }
-  .Logo {
-    color: greenyellow;
-    font-family: 'Techie';
-  }
+
   
   .App-header {
     min-height: 100vh;
@@ -165,26 +146,7 @@
     text-align: center;
    
   }
-  .card {
-    background-color: black;
-    border-width: 5px;
-    border-color: fuchsia;
-    border-radius: 10px;
-    width: 80%;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .card2 {
-    background-color: black;
-    border-width: 5px;
-    border-color: teal;
-    border-radius: 10px;
-    
-    
-    max-width: 160px;
-    
-  
-  }
+
   .skill-text {
     color: greenyellow;
     font-family: 'Roboto';

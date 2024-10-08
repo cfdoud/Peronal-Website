@@ -16,8 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from .views import ProjectListCreate
+from api.views import ProjectListCreate
 urlpatterns = [
     path('projects/', ProjectListCreate.as_view(), name='project-list-create'),
+    path('admin/', admin.site.urls),
 
 ]
