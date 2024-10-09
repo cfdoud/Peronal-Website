@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-ffmq(@+d+%7g(w!(&!4cq3^0#_*crxn-vzps3z65#d_1=hi@0k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'https://christian-doud.netlify.app',
+    'localhost',
+    '3.139.79.246',
+]
 
 
 # Application definition
@@ -56,6 +60,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "https://christian-doud.netlify.app",
 ]
 
 ROOT_URLCONF = 'backend.urls'
@@ -120,15 +125,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-ALLOWED_HOSTS = [
-    
-    'https://christian-doud.netlify.app',
-    'localhost',
-    '127.0.0.1',
-    'backend-personal-k0ux.onrender.com',
-    
 
-]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
