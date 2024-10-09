@@ -121,11 +121,12 @@ USE_I18N = True
 USE_TZ = True
 
 ALLOWED_HOSTS = [
-    'backend-personal-k0ux.onrender.com',
+    
+    'https://christian-doud.netlify.app',
     'localhost',
     '127.0.0.1',
     'backend-personal-k0ux.onrender.com',
-    '3.139.79.246'
+    
 
 ]
 

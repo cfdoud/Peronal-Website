@@ -5,11 +5,32 @@ function Project() {
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-        // Fetch data from Django backend
-        fetch('http://127.0.0.1:8000/projects/')
-            .then(response => response.json())
-            .then(data => setProjects(data))
-            .catch(error => console.error('Error fetching data:', error));
+        const fetchProjects = async () => {
+            try {
+                // Try to fetch from the local server
+                const response = await fetch('http://3.139.79.246:8000/projects/');
+                if (!response.ok) {
+                    throw new Error('Failed to fetch from local server');
+                }
+                const data = await response.json();
+                setProjects(data);
+            } catch (error) {
+                console.error('Error fetching from local server:', error);
+                // Fallback to the online server
+                try {
+                    const response = await fetch('3.139.79.246/projects/');
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch from online server');
+                    }
+                    const data = await response.json();
+                    setProjects(data);
+                } catch (error) {
+                    console.error('Error fetching from online server:', error);
+                }
+            }
+        };
+
+        fetchProjects();
     }, []);
 
     return (
